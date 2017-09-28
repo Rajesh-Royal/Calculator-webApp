@@ -1,0 +1,105 @@
+<html>
+<head>
+<script type="text/javascript">
+function displynum(n1)
+{
+   document.calcform.txt1.value+=n1;
+ }
+ 
+ 
+</script>
+<style>
+
+ body
+{
+background-color:tan;
+} 
+.box
+{
+background-color:#3d4543;
+height:381px;
+width:260px;
+border-radius:10px;
+position:relative;
+top:90px;
+left:40%;
+box-shadow:4px 4px 4px gray;
+} 
+.display
+{
+background-color:#bccd95;
+width:220px;
+position:relative;
+left:15px;
+top:20px;
+height:40px;
+font-size:20px;
+}
+.buttons {
+    padding: 5px 5px;
+    border: none;
+	margin-top:50px;
+	background-color:darkgray;
+	border:1px solid gray;
+	border-radious:10px;
+	
+}
+input[type=button] {
+    background-color: #4CAF50;
+    color: white;
+    padding-top: 5px 5px;
+    border: 1px solid gray;
+	box-shadow:3px 3px 1px gray;
+    border-radius: 25px;
+    cursor: pointer;
+	font-size:30px;
+	margin:8px;
+}
+input[type=button]:hover
+{
+	box-shadow:5px 5px 10px gray;
+	background-color:9CAF50;
+	 -webkit-transition-duration: 0.3s; 
+    transition-duration: 0.3s;
+	
+}
+input[type=button]:active {
+    
+    margin: 0;
+    opacity: 0;
+    transition: 0.5s
+}
+
+
+</style>
+</head>
+<body>
+<div class="box">
+	<form name="calcform">
+	
+		
+		<input type="text" name="txt1" style="text-align:right;" "readonly="readonly"" class="display"/><br/>
+		<div class="buttons">
+		<input type="button" name="clear" value="clear" onClick="(txt1.value='')" /><br/>
+		<input type="button" name="btn9" value=9 onclick="displynum(btn9.value)"/>
+		<input type="button" name="btn8" value="8" onclick="displynum(btn8.value)"/>
+		<input type="button" name="btn7" value="7" onclick="displynum(btn7.value)"/>&nbsp;
+		<input type="button" name="addbtn" value="+" onclick="displynum(addbtn.value)"/><br/>
+		<input type="button" name="btn6" value="6" onclick="displynum(btn6.value)"/>
+		<input type="button" name="btn5" value="5" onclick="displynum(btn5.value)"/>
+		<input type="button" name="btn4" value="4" onclick="displynum(btn4.value)"/>&nbsp;&nbsp;&nbsp;
+		<input type="button" name="subbtn" value="-" onclick="displynum(subbtn.value)" style="padding:0px 15px; margin-left:-2px;" /><br/>
+		<input type="button" name="btn3" value="3" onclick="displynum(btn3.value)"/>
+		<input type="button" name="btn2" value="2" onclick="displynum(btn2.value)"/>
+		<input type="button" name="btn1" value="1" onclick="displynum(btn1.value)"/>&nbsp;&nbsp;
+		<input type="button" name="btnmul" value="*" onclick="displynum(btnmul.value)"/><br/>
+		<input type="button" name="btn0" value="0" onclick="displynum(btn0.value)"/>
+		<input type="button" name="modbtn" value="%" onclick="displynum(modbtn.value)" style="margin-left:-0.001;"/>
+		<input type="button" name="result" value="=" onclick="txt1.value=eval(txt1.value)" style="margin-left:-0.1px;"/>&nbsp;
+		<input type="button" name="divbtn" value="/" onclick="displynum(divbtn.value)" >
+		
+		</div>
+	</form>
+</div>
+</body>
+</html>
