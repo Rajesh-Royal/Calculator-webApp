@@ -1,6 +1,6 @@
 # Calculator-webApp
 
-### `https://rajesh-royal.github.io/Calculator-webApp/calculator.html`
+#### https://rajesh-royal.github.io/Calculator-webApp/calculator.html
 
 Calculator-webApp is an simple Calculator for websites to calculate math with unlimited value but not too much :). 
 A calculator iOS web app.
